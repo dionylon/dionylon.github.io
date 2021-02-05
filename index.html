@@ -1,1 +1,50 @@
- "hello"
+<html>
+  <body class="bg-pure">
+    <div class="bg breathe-div"></div>
+    <div class="full-width text">Coming Soon!</div>
+  </body>
+</html>
+
+<style>
+  .bg-pure {
+    background: #a6cfe2;
+  }
+  .bg {
+    background: linear-gradient(-125deg, #57bdbf, #2f9de2);
+  }
+  .full-width {
+    width: 100%;
+  }
+  .text {
+    font-size: 70px;
+    text-align: center;
+    font-weight: 700;
+    font-family: "Raleway", sans-serif;
+    color: white;
+  }
+  .breathe-div {
+    width: 350px;
+    height: 350px;
+    border: 1px solid #2b92d4;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    margin: 150px auto;
+    overflow: hidden;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-name: breathe;
+    -webkit-animation-duration: 1500ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+  }
+
+  @-webkit-keyframes breathe {
+    0% {
+      opacity: 0.4;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+</style>
